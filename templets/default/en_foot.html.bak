@@ -1,0 +1,16 @@
+<!--footer start-->
+<div id="footer">
+<div class="inner">
+<div class="BottomNav">
+<a href="{dede:global.cfg_basehost/}/en/">HOME</a> | 
+{dede:channel row='6'  type='son' typeid='8'  }
+<a href="[field:typelink/]">[field:typename/]</a> | 
+{/dede:channel}
+</div>
+<div class="HeightTab"></div>
+<p>Copyright  Weihe Wire Mesh Products Co., Ltd.  All Rights Reserved </p>
+<p>Tel: 086-0318-7589136    Fax: 086-0318-7589536   Phone£º13731377073   Address£ºTaicheng industrial zone, Anping, Hebei, China</p>
+
+</div>
+</div>
+<!--footer end -->

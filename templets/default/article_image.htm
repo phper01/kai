@@ -1,0 +1,318 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<link href="{dede:global.cfg_templets_skin/}/style/inner.css" rel="stylesheet" type="text/css">
+<link href="{dede:global.cfg_templets_skin/}/style/common.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/iepngfix_tilebg.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery-1.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function CheckLogin(){
+	var taget_obj = document.getElementById('_ajax_feedback');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("{dede:global.cfg_cmsurl/}/member/ajax_feedback.php");
+	DedeXHTTP = null;
+}
+function checkSubmit(){
+	if(document.feedback.msg.value!='') document.feedback.submit();
+	else alert("评论内容不能为空！");
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("{dede:field name='phpurl'/}/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+	DedeXHTTP = null;
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "{dede:global.cfg_phpurl/}/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+	DedeXHTTP = null;
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("{dede:global.cfg_phpurl/}/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+
+
+  var shortname = "{dede:global.art_shortname/}";
+  var npage = {dede:field name='nowpage'/};
+	var totalpage = {dede:field name='totalpage'/};
+	var namehand = '{dede:field name='namehand'/}';
+	var displaytype = '{dede:field name='displaytype'/}';
+	var gtimer = null;
+	//大图
+	function dPlayBig()
+	{
+		var imgObj = document.getElementById("bigimg");
+		window.open(imgObj.src);
+	}
+	//停止幻灯
+	function dStopPlay()
+	{
+		if(gtimer) clearTimeout(gtimer);
+		else dPlayNext();
+	}
+	//开始幻灯
+	function dStartPlay()
+	{
+		if(npage!=totalpage) {
+			gtimer = setTimeout("dPlayNext()",10000);
+		}
+	}
+
+	//上一张
+	function dPlayPre(){
+
+	if(npage<2)
+	{
+			alert("这是第一页");
+	}
+	else
+	{
+			if(npage==2) {
+				if(namehand!='') location.href = namehand+shortname;
+				else location.href = "view.php?aid={dede:field name='id'/}";
+			} else if(displaytype=='st' && namehand!='') {
+				location.href = namehand+"_"+(npage-1)+shortname;
+			} else {
+				location.href = "view.php?aid={dede:field name='id'/}&pageno="+(npage-1);
+			}
+		}
+	}
+
+	//下一张
+	function dPlayNext()
+	{
+		if(npage==totalpage) { alert("没有了哦"); }
+		else
+		{
+			if(displaytype=='st' && namehand!='') location.href = namehand+"_"+(npage+1)+shortname;
+			else location.href = "view.php?aid={dede:field name='id'/}&pageno="+(npage+1);
+		}
+	}
+-->
+</script>
+</head>
+
+<body>
+<div id="wrapper">
+
+<!--head start-->
+<div id="head">
+
+{dede:include filename="head.html"/}
+
+
+</div>
+<!--head end-->
+<!--body start-->
+<div id="body">
+<!--focus start-->
+<div id="InnerBanner">
+
+</div>
+<!--foncus end-->
+<div class="HeightTab clearfix"></div>
+<!--inner start -->
+<div class="inner">
+<!--left start-->
+<div class="left">
+<div class="Sbox">
+<div class="topic">产品展示   News</div>
+<div class="blank"><ul>
+{dede:channelartlist typeid='3'}
+<li><a href="{dede:field name='typeurl'/}"><b>{dede:field name='typename'/}</b></a>
+{dede:arclist}
+<a href="[field:arcurl /]">[field:title /]</a>
+{/dede:arclist}
+
+</li> 
+
+{/dede:channelartlist}
+  </ul></div>
+</div>
+<div class="HeightTab clearfix"></div>
+<div class="Sbox">
+<div class="topic">最新资讯&nbsp;&nbsp;&nbsp;News</div>
+<div class="list">
+<dl>
+{dede:arclist row='8' titlelen='28' typeid='4'       orderby='id'}
+<dd><a href="[field:arcurl/]" target="_blank" title="[field:title/]">[field:title/]</a></dd>
+{/dede:arclist}
+</dl>
+</div>
+
+</div>
+<div class="HeightTab clearfix"></div>
+<div class="Sbox">
+<div class="topic">联系我们&nbsp;&nbsp;&nbsp;Contact</div>
+<div class="txt ColorLink">
+{dede:global.lianxi/}
+<p>网站：<a href="{dede:global.cfg_basehost/}" target="_blank">{dede:global.cfg_basehost/}</a> </p>
+<p align="center"><a href="http://wpa.qq.com/msgrd?v=3&amp;uin={dede:global.qqyi/}&amp;site=qq&amp;menu=yes"><img src="{dede:global.cfg_templets_skin/}/images/webqq.gif" alt="在线QQ交谈"></a> &nbsp;&nbsp;<a href="http://wpa.qq.com/msgrd?v=3&amp;uin={dede:global.qqer/}&amp;site=qq&amp;menu=yes"><img src="{dede:global.cfg_templets_skin/}/images/webqq.gif" alt="在线QQ交谈"></a> </p></div>
+</div>
+
+<div class="HeightTab clearfix"></div>
+<div class="Sbox">
+<div class="topic">搜索&nbsp;&nbsp;&nbsp;Search</div>
+<div class="SearchBar">
+<form method="get" action="{dede:global.cfg_cmsurl/}/plus/search.php">
+				<input name="q" id="search-text" size="15" onblur="if(this.value=='') this.value='请输入关键词';" onfocus="if(this.value=='请输入关键词') this.value='';" value="请输入关键词" type="text"><input id="search-submit" value="搜索" type="submit">
+			</form>
+</div>
+</div>
+</div>
+<!--left end-->
+<!--right start-->
+<div class="right">
+<div class="Position">
+
+<span> {dede:field name='position'/}</span>
+
+</div>
+<div class="HeightTab clearfix"></div>
+<!--main start-->
+<div class="main">
+
+<!--content start-->
+<div class="content">
+<div class="title"><h3>{dede:field.title/}</h3></div>
+<div class="infos">发布：{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;点击：<script src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}"type='text/javascript' language="javascript"></script></div>
+<div class="maincontent clearfix">
+<div id="MainContent" class="maincontent clearfix">
+
+
+
+
+
+
+
+
+
+<a href='javascript:dPlayPre();' id='cp'></a>
+<a href='javascript:dPlayNext();' id='cn'></a>
+
+<div class="clearfix"></div>
+
+             <!-- 如果使用的是多页单图模式(幻灯)，把href里的链接改为 javascript:dPlayNext(); 表示点击看下一页 -->
+             {dede:field name='imgurls' alt='图片输出区'}
+                [field:pagestyle runphp='yes'] @me= (@me==3 ? '<li>' : '');[/field:pagestyle]
+                <a [field:pagestyle runphp='yes'] @me= (@me==3 ? 'class="pic"' : ''); [/field:pagestyle]>
+                  <img src='[field:imgsrc/]' id='bigimg' [field:imgwidth /] alt='[field:alttext /]' style="margin-top:-400px;" border='0' />
+                </a>
+                
+                [field:pagestyle runphp='yes'] @me = (@me==3 ? '</li>' : ''); [/field:pagestyle]
+             {/dede:field}
+
+
+
+
+
+
+
+<br>
+
+
+
+ {dede:field.body/}
+</div>
+
+</div>
+
+
+<div class="prenext">
+<ul>
+<li>{dede:prenext get='pre'/}</li>
+<li>{dede:prenext get='next'/}</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+<!--content end-->
+
+</div>
+<!--main end-->
+</div>
+<!--right end-->
+</div>
+<!--inner end-->
+</div>
+<!--body end-->
+<div class="HeightTab clearfix"></div>
+{dede:include filename="foot.html"/}
+
+
+<script type="text/javascript">
+window.onerror=function(){return true;}
+</script>
+
+
+</body></html>
+<!--
+Powered By QQ12976980   
+-->

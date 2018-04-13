@@ -1,0 +1,438 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>河南省商开智能科技股份有限公司</title>
+<meta name="description" content="河南省商开智能科技股份有限公司" />
+<meta name="keywords" content="河南省商开智能科技股份有限公司" />
+<link href="/templets/default/style/inner.css" rel="stylesheet" type="text/css">
+<link href="/templets/default/style/common.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/templets/default/js/iepngfix_tilebg.js"></script>
+<script type="text/javascript" src="/templets/default/js/jquery-1.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function CheckLogin(){
+	var taget_obj = document.getElementById('_ajax_feedback');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/member/ajax_feedback.php");
+	DedeXHTTP = null;
+}
+function checkSubmit(){
+	if(document.feedback.msg.value!='') document.feedback.submit();
+	else alert("评论内容不能为空！");
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+	DedeXHTTP = null;
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+	DedeXHTTP = null;
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+
+
+  var shortname = ".html";
+  var npage = 3;
+	var totalpage = 13;
+	var namehand = '50';
+	var displaytype = 'st';
+	var gtimer = null;
+	//大图
+	function dPlayBig()
+	{
+		var imgObj = document.getElementById("bigimg");
+		window.open(imgObj.src);
+	}
+	//停止幻灯
+	function dStopPlay()
+	{
+		if(gtimer) clearTimeout(gtimer);
+		else dPlayNext();
+	}
+	//开始幻灯
+	function dStartPlay()
+	{
+		if(npage!=totalpage) {
+			gtimer = setTimeout("dPlayNext()",10000);
+		}
+	}
+
+	//上一张
+	function dPlayPre(){
+
+	if(npage<2)
+	{
+			alert("这是第一页");
+	}
+	else
+	{
+			if(npage==2) {
+				if(namehand!='') location.href = namehand+shortname;
+				else location.href = "view.php?aid=50";
+			} else if(displaytype=='st' && namehand!='') {
+				location.href = namehand+"_"+(npage-1)+shortname;
+			} else {
+				location.href = "view.php?aid=50&pageno="+(npage-1);
+			}
+		}
+	}
+
+	//下一张
+	function dPlayNext()
+	{
+		if(npage==totalpage) { alert("没有了哦"); }
+		else
+		{
+			if(displaytype=='st' && namehand!='') location.href = namehand+"_"+(npage+1)+shortname;
+			else location.href = "view.php?aid=50&pageno="+(npage+1);
+		}
+	}
+-->
+</script>
+</head>
+
+<body>
+<div id="wrapper">
+
+<!--head start-->
+<div id="head">
+
+﻿<script type="text/javascript" src="/templets/default/js/lang.js"></script>
+<script type="text/javascript" src="/templets/shuangyu/js/TabShow.js"></script>
+
+<!--top start -->
+<div class="top">
+<div class="TopInfo"><span class="link">选择语言：<a href="/">简体中文</a> | 
+
+<a href="javascript:zh_tran('t');" class="zh_click"  id="zh_click_t">繁體中文</a>  |
+
+
+ <a href="http://localhost/en">English</a></span>
+</div>
+<div class="clearfix"></div>
+<div class="TopLogo">
+<div class="logo"><a href="/"><img src="/templets/default/images/logo.png" alt="河南省商开智能科技股份有限公司"></a></div>
+<div class="tel">
+<p class="telW">24小时客服热线</p>
+<p class="telN">0370-3250685</p>
+</div>
+</div>
+
+</div>
+<!--top end-->
+<!--nav start-->
+
+<!--Head Menu Start-->
+
+<div class="menucss">
+<div class="menu">
+<ul>
+<li><a class="hide" href="/">网站首页</a></li>
+
+<li><a class="hide" href="/cn/about/">关于公司</a>
+    <ul>
+        
+            
+            <li><a href='/cn/about/qiyejigou'>企业机构</a></li><li><a href='/cn/about/Culture'>企业文化</a></li><li><a href='/cn/about/qiyejianjie'>企业简介</a></li><li><a href='/cn/about/qiyezizhi'>企业资质</a></li>
+    </ul>
+
+</li><li><a class="hide" href="/cn/product/">产品与技术</a>
+    <ul>
+        
+            
+            
+    </ul>
+
+</li><li><a class="hide" href="/cn/news/">新闻资讯</a>
+    <ul>
+        
+            
+            <li><a href='/cn/news/CompanyNews'>企业动态</a></li><li><a href='/cn/news/IndustryNews'>行业新闻</a></li>
+    </ul>
+
+</li><li><a class="hide" href="/cn/shengchanchejian/">解决方案</a>
+    <ul>
+        
+            
+            
+    </ul>
+
+</li><li><a class="hide" href="/cn/contact/">联系方式</a>
+    <ul>
+        
+            
+            
+    </ul>
+
+</li><li><a class="hide" href="/cn/tuji/">市场与服务</a>
+    <ul>
+        
+            
+            <li><a href='/cn/tuji/fuwutixi'>服务体系</a></li><li><a href='/cn/tuji/jingdiananli'>经典案例</a></li><li><a href='/cn/tuji/xiaoshouwangluo'>销售网络</a></li>
+    </ul>
+
+</li>
+
+
+
+
+
+
+</ul>
+<div class="clear"> </div>
+</div>
+</div>
+
+
+<!--Head Menu End-->
+
+<div class="clearfix"></div>
+<!--nav end-->
+
+
+</div>
+<!--head end-->
+<!--body start-->
+<div id="body">
+<!--focus start-->
+<div id="InnerBanner">
+
+</div>
+<!--foncus end-->
+<div class="HeightTab clearfix"></div>
+<!--inner start -->
+<div class="inner">
+<!--left start-->
+<div class="left">
+<div class="Sbox">
+<div class="topic">产品展示   News</div>
+<div class="blank"><ul>
+
+  </ul></div>
+</div>
+<div class="HeightTab clearfix"></div>
+<div class="Sbox">
+<div class="topic">最新资讯&nbsp;&nbsp;&nbsp;News</div>
+<div class="list">
+<dl>
+
+</dl>
+</div>
+
+</div>
+<div class="HeightTab clearfix"></div>
+<div class="Sbox">
+<div class="topic">联系我们&nbsp;&nbsp;&nbsp;Contact</div>
+<div class="txt ColorLink">
+<p>地址：河南省商丘市睢阳区产业集聚区</p> <p>固话：0370-3250685</p> <p>传真：0370-3250685</p>
+<p>网站：<a href="http://localhost" target="_blank">http://localhost</a> </p>
+<p align="center"><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=843197782&amp;site=qq&amp;menu=yes"><img src="/templets/default/images/webqq.gif" alt="在线QQ交谈"></a> &nbsp;&nbsp;<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=843197782&amp;site=qq&amp;menu=yes"><img src="/templets/default/images/webqq.gif" alt="在线QQ交谈"></a> </p></div>
+</div>
+
+<div class="HeightTab clearfix"></div>
+<div class="Sbox">
+<div class="topic">搜索&nbsp;&nbsp;&nbsp;Search</div>
+<div class="SearchBar">
+<form method="get" action="/plus/search.php">
+				<input name="q" id="search-text" size="15" onblur="if(this.value=='') this.value='请输入关键词';" onfocus="if(this.value=='请输入关键词') this.value='';" value="请输入关键词" type="text"><input id="search-submit" value="搜索" type="submit">
+			</form>
+</div>
+</div>
+</div>
+<!--left end-->
+<!--right start-->
+<div class="right">
+<div class="Position">
+
+<span> <a href='http://localhost/'>首页</a> > <a href='/cn/'>中文网站</a> > <a href='/cn/tuji/'>市场与服务</a> > </span>
+
+</div>
+<div class="HeightTab clearfix"></div>
+<!--main start-->
+<div class="main">
+
+<!--content start-->
+<div class="content">
+<div class="title"><h3>测试图集效果(3)</h3></div>
+<div class="infos">发布：2013-08-31 21:14&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;点击：<script src="/plus/count.php?view=yes&aid=50&mid=1"type='text/javascript' language="javascript"></script></div>
+<div class="maincontent clearfix">
+<div id="MainContent" class="maincontent clearfix">
+
+
+
+
+
+
+
+
+
+<a href='javascript:dPlayPre();' id='cp'></a>
+<a href='javascript:dPlayNext();' id='cn'></a>
+
+<div class="clearfix"></div>
+
+             <!-- 如果使用的是多页单图模式(幻灯)，把href里的链接改为 javascript:dPlayNext(); 表示点击看下一页 -->
+             
+                
+                <a >
+                  <img src='/uploads/allimg/130831/1-130S1211G2.jpg' id='bigimg'  width='800'  alt='3' style="margin-top:-400px;" border='0' />
+                </a>
+                
+                
+             
+
+
+
+
+
+
+
+<br>
+
+
+
+ 　当下手机最为重要的功能之一便是拍照功能了，尤其是赶时髦爱小臭美的MM们，对自己手机的摄像头可是有着很严格甚至苛刻的要求。而索尼的新机索尼 LT29i(Xperia TX)或许正是为此而生，其拥有的130万像素前置摄像头和1300万像素主摄像头可谓是相当给力，相信这一必杀技也可以让它在近期众多新机中脱颖而出。 目前在商家石家庄市新华区乾源通讯有限公司售价2699元，感兴趣的朋友不妨关注下!
+<p>
+	　　索尼LT29i在外观设计上有点似曾相识的感觉，采用了索尼爱立信类似风格的&ldquo;小蛮腰&rdquo;设计，日系风格明显。该机外形时尚简约，拥有黑、白、粉三种颜 色可选。手机正面拥有一块4.6英寸HD(720&times;1280像素)级超大触摸屏，显示效果清晰细腻。除此以外，索尼X(资料 报价 图片 相关文章)peria TX LT29i还拥有130万像素前置摄像头和1300万像素的主摄像头，其中主摄像头还可支持1080p高清视频的摄录。</p>
+<p>
+	　　硬件配置方面，索尼LT29i也是非常强悍的。这款手机内置了一颗主频为1.5GHz的高通骁龙S4双核处理器，新架构的处理器使手机性能不减，且降 低了能耗。内存方面则采用了16GB ROM+1GB RAM的高内存组合，保障了手机可以将性能发挥到最出色的水准。系统方面，该机采用了原生的Android 4.0版本智能系统，在强劲的硬件保障下，系统响应十分迅速。</p>
+<p>
+	　　编辑点评：索尼LT29i是索尼今秋发布的新品旗舰，它外观设计简约时尚，有着4.6英寸大屏，分辨率达到720&times;1280像素;虽然没有搭载四核，但却有着1.5GHz的高通骁龙S4双核处理器，其强悍的性能绝不逊于普通四核。</p>
+
+</div>
+
+</div>
+
+
+<div class="prenext">
+<ul>
+<li>上一篇：没有了 </li>
+<li>下一篇：没有了 </li>
+</ul>
+</div>
+
+</div>
+
+</div>
+<!--content end-->
+
+</div>
+<!--main end-->
+</div>
+<!--right end-->
+</div>
+<!--inner end-->
+</div>
+<!--body end-->
+<div class="HeightTab clearfix"></div>
+﻿<!--footer start-->
+<div id="footer">
+<div class="inner">
+<div class="BottomNav">
+<a href="http://localhost/cn/">网站首页</a> | 
+
+<a href="/cn/about/">关于公司</a> | 
+
+<a href="/cn/product/">产品与技术</a> | 
+
+<a href="/cn/news/">新闻资讯</a> | 
+
+<a href="/cn/shengchanchejian/">解决方案</a> | 
+
+<a href="/cn/contact/">联系方式</a> | 
+
+<a href="/cn/tuji/">市场与服务</a> | 
+
+</div>
+<div class="HeightTab"></div>
+Copyright &copy; 河南省商开智能科技股份有限公司 版权所有&nbsp;&nbsp;  技术支持：qiubowei@foxmail.com<br><br>
+固话：0370-3250685 &nbsp;&nbsp;传真：0370-3250685 &nbsp;&nbsp;地址：河南省商丘市睢阳区产业集聚区
+</div>
+
+
+</div>
+</div>
+<!--footer end -->
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+window.onerror=function(){return true;}
+</script>
+
+
+</body></html>
+<!--
+Powered By QQ12976980   
+-->

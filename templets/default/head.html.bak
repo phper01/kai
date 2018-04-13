@@ -1,0 +1,60 @@
+﻿<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/lang.js"></script>
+<script type="text/javascript" src="/templets/shuangyu/js/TabShow.js"></script>
+
+<!--top start -->
+<div class="top">
+<div class="TopInfo"><span class="link">选择语言：<a href="/">简体中文</a> | 
+
+<a href="javascript:zh_tran('t');" class="zh_click"  id="zh_click_t">繁體中文</a>  |
+
+
+ <a href="{dede:global.cfg_basehost/}/en">English</a></span>
+</div>
+<div class="clearfix"></div>
+<div class="TopLogo">
+<div class="logo"><a href="{dede:global.cfg_indexurl/}"><img src="{dede:global.cfg_templets_skin/}/images/logo.png" alt="{dede:global.cfg_webname/}"></a></div>
+<div class="tel">
+</p><p class="telW">24小时客服热线</p>
+<p class="telN">{dede:global.toubudianhua/}</p>
+</div>
+</div>
+
+</div>
+<!--top end-->
+<!--nav start-->
+
+<!--Head Menu Start-->
+
+<div class="menucss">
+<div class="menu">
+<ul>
+<li><a class="hide" href="{dede:global.cfg_indexurl/}">网站{dede:global.cfg_indexname/}</a></li>
+
+{dede:channelartlist typeid='1' row='7'}
+<li><a class="hide" href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a>
+    <ul>
+        
+            
+            {dede:sql sql='Select * from dede_arctype where reid=~id~'}
+            <li><a href='[field:typedir function='str_replace("{cmspath}","",@me)'/]'>[field:typename/]</a></li>
+            {/dede:sql}
+    </ul>
+
+</li>
+{/dede:channelartlist}
+
+
+
+
+
+
+</ul>
+<div class="clear"> </div>
+</div>
+</div>
+
+
+<!--Head Menu End-->
+
+<div class="clearfix"></div>
+<!--nav end-->

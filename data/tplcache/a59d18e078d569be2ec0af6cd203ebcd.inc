@@ -1,0 +1,1 @@
+<li><a href="{dede:field name='typeurl'/}" target=""><span>{dede:field name='typename'/}</span></a></li>

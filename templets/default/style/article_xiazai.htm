@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<link href="{dede:global.cfg_templets_skin/}/style/inner.css" rel="stylesheet" type="text/css">
+<link href="{dede:global.cfg_templets_skin/}/style/common.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/functions.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/iepngfix_tilebg.js"></script>
+</head>
+
+<body>
+<div id="wrapper">
+
+<!--head start-->
+<div id="head">
+
+{dede:include filename="head.html"/}
+
+
+</div>
+<!--head end-->
+<!--body start-->
+<div id="body">
+<!--focus start-->
+<div id="InnerBanner">
+
+</div>
+<!--foncus end-->
+<div class="HeightTab clearfix"></div>
+<!--inner start -->
+<div class="inner">
+<!--left start-->
+<div class="left">
+<div class="Sbox">
+<div class="topic">技术支持&nbsp;&nbsp;&nbsp;Support</div>
+<div class="blank"><ul>
+{dede:channel row='5'  type='son' typeid='5'  }
+<li><a href="[field:typelink/]">[field:typename/]</a></li> 
+{/dede:channel}
+  </ul></div>
+</div>
+<div class="HeightTab clearfix"></div>
+<div class="Sbox">
+<div class="topic">最新资讯&nbsp;&nbsp;&nbsp;News</div>
+<div class="list">
+<dl>
+{dede:arclist row='8' titlelen='28' typeid='4'       orderby='id'}
+<dd><a href="[field:arcurl/]" target="_blank" title="[field:title/]">[field:title/]</a></dd>
+{/dede:arclist}
+</dl>
+</div>
+
+</div>
+<div class="HeightTab clearfix"></div>
+<div class="Sbox">
+<div class="topic">联系我们&nbsp;&nbsp;&nbsp;Contact</div>
+<div class="txt ColorLink">
+{dede:global.lianxi/}
+<p>网站：<a href="{dede:global.cfg_basehost/}" target="_blank">{dede:global.cfg_basehost/}</a> </p>
+<p align="center"><a href="http://wpa.qq.com/msgrd?v=3&amp;uin={dede:global.qqyi/}&amp;site=qq&amp;menu=yes"><img src="{dede:global.cfg_templets_skin/}/images/webqq.gif" alt="在线QQ交谈"></a> &nbsp;&nbsp;<a href="http://wpa.qq.com/msgrd?v=3&amp;uin={dede:global.qqer/}&amp;site=qq&amp;menu=yes"><img src="{dede:global.cfg_templets_skin/}/images/webqq.gif" alt="在线QQ交谈"></a> </p></div>
+</div>
+
+<div class="HeightTab clearfix"></div>
+<div class="Sbox">
+<div class="topic">搜索&nbsp;&nbsp;&nbsp;Search</div>
+<div class="SearchBar">
+<form method="get" action="{dede:global.cfg_cmsurl/}/plus/search.php">
+				<input name="q" id="search-text" size="15" onblur="if(this.value=='') this.value='请输入关键词';" onfocus="if(this.value=='请输入关键词') this.value='';" value="请输入关键词" type="text"><input id="search-submit" value="搜索" type="submit">
+			</form>
+</div>
+</div>
+</div>
+<!--left end-->
+<!--right start-->
+<div class="right">
+<div class="Position">
+
+<span> {dede:field name='position'/}</span>
+
+</div>
+<div class="HeightTab clearfix"></div>
+<!--main start-->
+<div class="main">
+
+<!--content start-->
+<div class="content">
+<div class="title"><h3>{dede:field.title/}</h3></div>
+<div class="infos">发布：{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;点击：<script src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}"type='text/javascript' language="javascript"></script></div>
+<div class="maincontent clearfix">
+<div id="MainContent" class="maincontent clearfix">
+
+				{dede:field.introduce/}
+</div>
+
+</div>
+
+
+<!----------------下载--------------->
+
+<div class="labeltitle" style="border-top:2px #999999 dotted; margin-top:20px; padding-top:10px; ">
+				<strong>下载地址:</strong>
+			</div>
+			<div class="content" style=" margin-top:15px;">
+				<ul class="downurllist">
+                	{dede:field name='softlinks'/}
+                </ul>
+			</div>
+
+<!----------------/下载--------------->
+
+
+<div class="prenext">
+<ul>
+<li>{dede:prenext get='pre'/}</li>
+<li>{dede:prenext get='next'/}</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+<!--content end-->
+
+</div>
+<!--main end-->
+</div>
+<!--right end-->
+</div>
+<!--inner end-->
+</div>
+<!--body end-->
+<div class="HeightTab clearfix"></div>
+{dede:include filename="foot.html"/}
+
+
+<script type="text/javascript">
+window.onerror=function(){return true;}
+</script>
+
+
+</body></html>
+<!--
+Powered By QQ12976980   
+-->

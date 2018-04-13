@@ -1,0 +1,49 @@
+﻿
+
+<!--top start -->
+<div class="top">
+<div class="TopInfo"><span class="link">Language：<a href="{dede:global.cfg_basehost/}" >简体中文</a> |  <a href="{dede:global.cfg_basehost/}/en">English</a></span>
+</div>
+<div class="clearfix"></div>
+<div class="TopLogo">
+<div class="logo"><a href="{dede:global.cfg_indexurl/}"><img src="{dede:global.cfg_templets_skin/}/images/logo.png" alt="中英文企业网站源码"></a></div>
+<div class="tel">
+<p class="telW">HOTLINE</p>
+<p class="telN">{dede:global.toubudianhua/}</p>
+</div>
+</div>
+
+</div>
+<!--top end-->
+<!--nav start-->
+
+<!--Head Menu Start-->
+
+<div class="menucss">
+<div class="menu">
+<ul>
+<li><a class="hide" href="/en/">HOME</a></li>
+
+{dede:channelartlist typeid='8' row='7'}
+<li><a class="hide" href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a>
+    <ul>
+            {dede:sql sql='Select * from dede_arctype where reid=~id~'}
+            <li><a href='[field:typedir function='str_replace("{cmspath}","",@me)'/]'>[field:typename/]</a></li>
+            {/dede:sql}
+    </ul>
+
+</li>
+{/dede:channelartlist}
+
+
+
+</ul>
+<div class="clear"> </div>
+</div>
+</div>
+
+
+<!--Head Menu End-->
+
+<div class="clearfix"></div>
+<!--nav end-->
