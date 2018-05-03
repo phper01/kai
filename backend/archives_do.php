@@ -36,7 +36,7 @@ if($dopost=='editArchives')
     $row = $dsql->GetOne($query);
     $gurl = $row['editcon'];
     if($gurl=='') $gurl='article_edit.php';
-    header("location:{$gurl}?aid=$aid");
+    echo '<META HTTP-EQUIV="REFRESH" CONTENT="0; URL='.$gurl.'?aid='.$aid.'">';
     exit();
 }
 /*--------------------------

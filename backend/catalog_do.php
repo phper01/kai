@@ -26,7 +26,7 @@ if($dopost=="addArchives")
     //默认文章调用发布表单
     if(empty($cid) && empty($channelid))
     {
-        header("location:article_add.php");
+        echo "<script language='javascript'>window.location.href='article_add.php'</script> ";
         exit();
     }
     if(!empty($channelid))
@@ -48,6 +48,7 @@ if($dopost=="addArchives")
 
     //跳转并传递参数
     header("location:{$gurl}?channelid={$channelid}&cid={$cid}");
+    echo "<script language='javascript'>window.location.href='{$gurl}?channelid={$channelid}&cid={$cid}'</script> ";
     exit();
 }
 /*--------------------------
