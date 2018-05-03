@@ -47,7 +47,6 @@ if($dopost=="addArchives")
     }
 
     //跳转并传递参数
-    header("location:{$gurl}?channelid={$channelid}&cid={$cid}");
     echo "<script language='javascript'>window.location.href='{$gurl}?channelid={$channelid}&cid={$cid}'</script> ";
     exit();
 }
@@ -64,7 +63,7 @@ else if($dopost=="listArchives")
             $arcrank = '';
         }
         $gurl = str_replace('..','',$gurl);
-        header("location:{$gurl}?arcrank={$arcrank}&cid={$cid}");
+        echo "<script language='javascript'>window.location.href='{$gurl}?channelid={$arcrank}&cid={$cid}'</script> ";
         exit();
     }
     if($cid>0)
@@ -90,7 +89,7 @@ else if($dopost=="listArchives")
     }
     
     if(empty($gurl)) $gurl = 'content_list.php';
-    header("location:{$gurl}?channelid={$channelid}&cid={$cid}");
+    echo "<script language='javascript'>window.location.href='{$gurl}?channelid={$channelid}&cid={$cid}'</script> ";
     exit();
 }
 /*--------------------------
@@ -100,6 +99,7 @@ function viewTempletDir();
 else if($dopost=="viewTemplet")
 {
     header("location:tpl.php?path=/".$cfg_df_style);
+    
     exit();
 }
 
