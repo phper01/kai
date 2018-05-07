@@ -35,7 +35,6 @@ if($fmdo=='sendMail')
     $mailbody .= "欢迎注册成为[{$cfg_webname}]的会员。\r\n";
     $mailbody .= "要通过注册，还必须进行最后一步操作，请点击或复制下面链接到地址栏访问这地址：\r\n\r\n";
     $mailbody .= "{$url}\r\n\r\n";
-    $mailbody .= "Power by http://www.dedecms.com 织梦内容管理系统！\r\n";
   
     $headers = "From: ".$cfg_adminemail."\r\nReply-To: ".$cfg_adminemail;
     if($cfg_sendmail_bysmtp == 'Y' && !empty($cfg_smtp_server))
@@ -299,7 +298,7 @@ else if($fmdo=='login')
                        `drink`='0', `datingtype`='0', `language`='', `nature`='', `lovemsg`='', `address`='',`uptime`='0';",
                         1 => "INSERT INTO `#@__member_tj` SET `mid`='$mid',`article`='0',`album`='0',`archives`='0',`homecount`='0',`pagecount`='0',`feedback`='0',`friend`='0',`stow`='0';",
                         2 => "INSERT INTO `#@__member_space` SET `mid`='$mid',`pagesize`='10',`matt`='0',`spacename`='{$uname}的空间',`spacelogo`='',`spacestyle`='person', `sign`='',`spacenews`='';",
-                        3 => "INSERT INTO `#@__member_flink` SET `mid`='$mid', `title`='织梦内容管理系统', `url`='http://www.dedecms.com';"
+                        3 => "INSERT INTO `#@__member_flink` SET `mid`='$mid', `title`='商开', `url`='http://www.dedecms.com';"
                         );                        
                         foreach($data as $val) $dsql->ExecuteNoneQuery($val);
                     }

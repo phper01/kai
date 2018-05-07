@@ -219,7 +219,7 @@ if($step == 1)
             $dsql->ExecuteNoneQuery($spacequery);
     
             //写入其它默认数据
-            $dsql->ExecuteNoneQuery("INSERT INTO `#@__member_flink`(mid,title,url) VALUES('$mid','织梦内容管理系统','http://www.dedecms.com'); ");
+            $dsql->ExecuteNoneQuery("INSERT INTO `#@__member_flink`(mid,title,url) VALUES('$mid','商开系统','http://www.dedecms.com'); ");
             
             $membermodel = new membermodel($mtype);
             $modid=$membermodel->modid;
@@ -254,7 +254,6 @@ if($step == 1)
                 $mailbody .= "欢迎注册成为[{$cfg_webname}]的会员。\r\n";
                 $mailbody .= "要通过注册，还必须进行最后一步操作，请点击或复制下面链接到地址栏访问这地址：\r\n\r\n";
                 $mailbody .= "{$url}\r\n\r\n";
-                $mailbody .= "Power by http://www.dedecms.com 织梦内容管理系统！\r\n";
           
                 $headers = "From: ".$cfg_adminemail."\r\nReply-To: ".$cfg_adminemail;
                 if($cfg_sendmail_bysmtp == 'Y' && !empty($cfg_smtp_server))
