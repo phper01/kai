@@ -57,7 +57,6 @@ else if($action=='send')
     $msg = htmlspecialchars($msg);
     $mailtitle = "你的好友给你推荐了一篇文章";
     $mailbody .= "$msg \r\n\r\n";
-    $mailbody .= "Power by http://www.dedecms.com 织梦内容管理系统！";
 
     $headers = "From: ".$cfg_adminemail."\r\nReply-To: ".$cfg_adminemail;
     
