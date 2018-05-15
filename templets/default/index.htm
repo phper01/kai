@@ -93,10 +93,14 @@ document.write('<embed src="{dede:global.cfg_templeturl /}/default/images/bcastr
 <div class="TabBlock">
 <div class="menu">
 <ul>
-<li class="Tabs1"><a class="tab1" onmousemove="easytabs(1, 1);" onfocus="easytabs(1, 1);" title="{dede:type typeid="18"}[field:typename /]{/dede:type}" id="tablink1" href="{dede:type typeid="18"}[field:typeurl /]{/dede:type}">{dede:type typeid="18"}[field:typename /]{/dede:type}</a></li> <li class="Tabs2"><a class="tab2" onmousemove="easytabs(1, 2);" onfocus="easytabs(1, 2);" title="{dede:type typeid="19"}[field:typename /]{/dede:type}" id="tablink2" href="{dede:type typeid="19"}[field:typeurl /]{/dede:type}">{dede:type typeid="19"}[field:typename /]{/dede:type}</a></li> <li class="Tabs3"><a class="tab3 tabactive" onmousemove="easytabs(1, 3);" onfocus="easytabs(1, 3);" title="{dede:type typeid="52"}[field:typename /]{/dede:type}" id="tablink3" href="{dede:type typeid="52"}[field:typeurl /]{/dede:type}">{dede:type typeid="52"}[field:typename /]{/dede:type}</a></li> 
+<li class="Tabs1">
+    <a class="tab1" onmousemove="easytabs(1, 1);" onfocus="easytabs(1, 1);" title="{dede:type typeid="18"}[field:typename /]{/dede:type}" id="tablink1" href="{dede:type typeid="18"}[field:typeurl /]{/dede:type}">{dede:type typeid="18"}[field:typename /]{/dede:type}</a>
+</li>
+    <li class="Tabs2"><a class="tab2" onmousemove="easytabs(1, 2);" onfocus="easytabs(1, 2);" title="{dede:type typeid="19"}[field:typename /]{/dede:type}" id="tablink2" href="{dede:type typeid="19"}[field:typeurl /]{/dede:type}">{dede:type typeid="19"}[field:typename /]{/dede:type}</a></li> 
+    <li class="Tabs3" style="display: none;"><a class="tab3 tabactive" onmousemove="easytabs(1, 3);" onfocus="easytabs(1, 3);" title="{dede:type typeid="52"}[field:typename /]{/dede:type}" id="tablink3" href="{dede:type typeid="52"}[field:typeurl /]{/dede:type}">{dede:type typeid="52"}[field:typename /]{/dede:type}</a></li> 
 </ul>
 </div>
-<div style="display: none;" id="tabcontent1"><table class="MBlockTable" border="0" cellpadding="0" cellspacing="0" width="100%"><tbody>
+<div style="display: block;" id="tabcontent1"><table class="MBlockTable" border="0" cellpadding="0" cellspacing="0" width="100%"><tbody>
 {dede:arclist row='12' titlelen='48' typeid='18'       }
 <tr>
 <td width="60%">· <a href="[field:arcurl/]" target="_blank" title="[field:title/]">[field:title/]</a></td>
