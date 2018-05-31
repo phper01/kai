@@ -11,6 +11,20 @@
 <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/iepngfix_tilebg.js"></script>
 <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery-1.js"></script>
 <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/lang.js"></script>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
 </head>
 
 <body>
