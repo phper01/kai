@@ -4,7 +4,7 @@
 .menucss { width:100%; height:46px; background:url(../images/nav_bg1.jpg) repeat-x; }
 /* set up the overall width of the menu div, the font and the margins */
 .menu {
-font-family: arial, sans-serif; 
+font-family: "SimSun",arial, sans-serif; 
 width:980px; 
 margin:0 auto;
 }
@@ -169,11 +169,11 @@ p{
 	color:#666666;
 	 }
 body{
-	font-family:"Microsoft Yahei",Arial, Helvetica, sans-serif;
+	font-family:"SimSun","Microsoft Yahei",Arial, Helvetica, sans-serif;
 	width:100%;
 }
 input,textarea{
-	font-family:"Microsoft Yahei",Arial, Helvetica, sans-serif;
+	font-family:"SimSun","Microsoft Yahei",Arial, Helvetica, sans-serif;
 }
 #wrapper{
 	width:100%;
@@ -232,7 +232,7 @@ input,textarea{
 	}	
 .top .TopLogo .tel .telN{
 	padding-left:0px;
-	font-family:Tahoma, Geneva, sans-serif;
+	font-family:"SimSun",Tahoma, Geneva, sans-serif;
 	font-size:29px;
 	color:#000000;
 	line-height:100%;}
@@ -475,7 +475,7 @@ input,textarea{
 	font-weight:bold;
 	padding-top:10px;
 	line-height:25px;
-	font-family:Microsoft Yahei;}	
+	font-family:"SimSun",Microsoft Yahei;}	
 
 #search_content .result_list dd{
 	padding:0 0 5px 0;
@@ -505,7 +505,7 @@ input,textarea{
 
 #search_content .result_page span{
 	font-size:12px;
-	font-family:arial;
+	font-family:"SimSun",arial;
 	padding:0 5px;
 	}	
 
@@ -666,7 +666,7 @@ input,textarea{
 
 
 
-#cshareF, #csPanel { line-height:14px; font-family:1em/normal Helvetica,Calibri,Tahoma,Arial,,sans-serif; }
+#cshareF, #csPanel { line-height:14px; font-family:"SimSun",1em/normal Helvetica,Calibri,Tahoma,Arial,,sans-serif; }
 .cs-xb1 { margin-left:5px; background:#0f0; }
 .cs-xb2 { margin-left:3px; border-width:0 2px; }
 .cs-xb3 { margin-left:2px; }
