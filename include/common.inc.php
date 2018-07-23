@@ -31,7 +31,7 @@ if (version_compare(PHP_VERSION, '5.3.0', '<'))
 
 if(version_compare(PHP_VERSION, '5.3.0', '>'))
 {
-    if(strtoupper(ini_get('request_order')) == 'GP') 
+    if(strtoupper(ini_get('request_order')) == 'CGP') 
     exit('DedeCMS Error: (PHP 5.3 and above) Please set \'request_order\' ini value to include C,G and P (recommended: \'CGP\') in php.ini,<a href="http://help.dedecms.com/install-use/apply/2013/0715/2325.html" target="_blank">more...</a>');
 }
 
