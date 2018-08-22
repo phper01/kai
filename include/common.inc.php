@@ -126,7 +126,7 @@ require_once(DEDEDATA."/config.cache.inc.php");
 
 //Session保存路径
 $enkey = substr(md5(substr($cfg_cookie_encode,0,5)),0,10);
-$sessSavePath = DEDEDATA."/sessions_{$enkey}";
+$sessSavePath = DEDEDATA."/sessions";
 if ( !is_dir($sessSavePath) ) mkdir($sessSavePath);
 
 if(is_writeable($sessSavePath) && is_readable($sessSavePath))
