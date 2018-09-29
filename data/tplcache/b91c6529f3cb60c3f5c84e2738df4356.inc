@@ -1,8 +1,0 @@
-<li><a class="hide" href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a>
-    <ul>
-             {dede:channel type='son'}
-                    <li><a href='[field:typelink/]'>[field:typename/]</a></li>
-			{/dede:channel}
-    </ul>
-
-</li>
