@@ -1,2 +1,0 @@
-<p style="text-align: center;"> <a href="[field:typeurl /]" target="_blank"><img alt="" src="/skin/img/7c3c85ce-8443-4f78-94a8-6cc9ffb999e3.jpg" style="width: 228px; height: 140px;" /></a></p>
-                    <p style="text-align: center;"> <a href="[field:typeurl /]" target="_blank">[field:typename /]</a></p>

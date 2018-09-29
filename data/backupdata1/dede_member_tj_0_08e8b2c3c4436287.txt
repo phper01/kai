@@ -1,4 +1,0 @@
-INSERT INTO `dede_member_tj` VALUES('1','0','0','0','0','141','0','0','0','0','0','6');
-INSERT INTO `dede_member_tj` VALUES('2','0','0','0','0','0','0','0','0','0','0','9');
-INSERT INTO `dede_member_tj` VALUES('3','0','0','0','0','0','0','0','0','0','0','1');
-INSERT INTO `dede_member_tj` VALUES('4','0','0','0','0','0','0','0','0','0','0','2');
