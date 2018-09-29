@@ -218,31 +218,31 @@ document.write('<embed src="/templets/default/images/bcastr3.swf" wmode="opaque"
 <td width="40%"><span>2018-09-02 21:04:48</span></td>
 </tr>
 <tr>
-<td width="60%">· <a href="/plus/list.php?aid=122" target="_blank" title="电气设备继电保护配置、整定计算">电气设备继电保护配置、整定计算</a></td>
+<td width="60%">· <a href="/plus/view.php?aid=122" target="_blank" title="电气设备继电保护配置、整定计算">电气设备继电保护配置、整定计算</a></td>
 <td width="40%"><span>2018-08-06 08:25:51</span></td>
 </tr>
 <tr>
-<td width="60%">· <a href="/plus/list.php?aid=121" target="_blank" title="中国输电标准走入巴西">中国输电标准走入巴西</a></td>
+<td width="60%">· <a href="/plus/view.php?aid=121" target="_blank" title="中国输电标准走入巴西">中国输电标准走入巴西</a></td>
 <td width="40%"><span>2018-07-28 14:38:27</span></td>
 </tr>
 <tr>
-<td width="60%">· <a href="/plus/list.php?aid=120" target="_blank" title="用户侧储能投资价值、优势、政策、盈">用户侧储能投资价值、优势、政策、盈</a></td>
+<td width="60%">· <a href="/plus/view.php?aid=120" target="_blank" title="用户侧储能投资价值、优势、政策、盈">用户侧储能投资价值、优势、政策、盈</a></td>
 <td width="40%"><span>2018-07-28 14:20:08</span></td>
 </tr>
 <tr>
-<td width="60%">· <a href="/plus/list.php?aid=119" target="_blank" title="下半年光伏价格反馈、消纳分析及潜在">下半年光伏价格反馈、消纳分析及潜在</a></td>
+<td width="60%">· <a href="/plus/view.php?aid=119" target="_blank" title="下半年光伏价格反馈、消纳分析及潜在">下半年光伏价格反馈、消纳分析及潜在</a></td>
 <td width="40%"><span>2018-07-28 14:14:09</span></td>
 </tr>
 <tr>
-<td width="60%">· <a href="/plus/list.php?aid=118" target="_blank" title="四步走 中国将率先在太空建立太阳能发">四步走 中国将率先在太空建立太阳能发</a></td>
+<td width="60%">· <a href="/plus/view.php?aid=118" target="_blank" title="四步走 中国将率先在太空建立太阳能发">四步走 中国将率先在太空建立太阳能发</a></td>
 <td width="40%"><span>2018-07-28 14:12:30</span></td>
 </tr>
 <tr>
-<td width="60%">· <a href="/plus/list.php?aid=117" target="_blank" title="国外分散式风电关键技术研究">国外分散式风电关键技术研究</a></td>
+<td width="60%">· <a href="/plus/view.php?aid=117" target="_blank" title="国外分散式风电关键技术研究">国外分散式风电关键技术研究</a></td>
 <td width="40%"><span>2018-07-28 14:11:05</span></td>
 </tr>
 <tr>
-<td width="60%">· <a href="/plus/list.php?aid=116" target="_blank" title="分散式风电开发流程">分散式风电开发流程</a></td>
+<td width="60%">· <a href="/plus/view.php?aid=116" target="_blank" title="分散式风电开发流程">分散式风电开发流程</a></td>
 <td width="40%"><span>2018-07-28 14:08:41</span></td>
 </tr>
 
@@ -252,15 +252,15 @@ document.write('<embed src="/templets/default/images/bcastr3.swf" wmode="opaque"
 
 <div style="display: none;" id="tabcontent2"><table class="MBlockTable" border="0" cellpadding="0" cellspacing="0" width="100%"><tbody>
 <tr>
-<td width="60%">· <a href="/plus/list.php?aid=114" target="_blank" title="电气设计思路">电气设计思路</a></td>
+<td width="60%">· <a href="/plus/view.php?aid=114" target="_blank" title="电气设计思路">电气设计思路</a></td>
 <td width="40%"><span>2018-07-27 15:06:03</span></td>
 </tr>
 <tr>
-<td width="60%">· <a href="/plus/list.php?aid=107" target="_blank" title="河南日报：光伏扶贫带来“阳光财富”">河南日报：光伏扶贫带来“阳光财富”</a></td>
+<td width="60%">· <a href="/plus/view.php?aid=107" target="_blank" title="河南日报：光伏扶贫带来“阳光财富”">河南日报：光伏扶贫带来“阳光财富”</a></td>
 <td width="40%"><span>2018-07-26 10:06:46</span></td>
 </tr>
 <tr>
-<td width="60%">· <a href="/plus/list.php?aid=108" target="_blank" title="国网河南电力试点开展通信电源方式管">国网河南电力试点开展通信电源方式管</a></td>
+<td width="60%">· <a href="/plus/view.php?aid=108" target="_blank" title="国网河南电力试点开展通信电源方式管">国网河南电力试点开展通信电源方式管</a></td>
 <td width="40%"><span>2018-07-26 10:06:02</span></td>
 </tr>
 <tr>
