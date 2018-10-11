@@ -95,10 +95,10 @@
 #body .MainBlock .left .TabBlock {
 	width:100%;
 	padding:0px 0px;}
-#body .MainBlock .left .TabBlock .menu {background-color:#FFFFFF; height:35px; border-right:1px solid #FFFFFF;overflow:hidden;z-index:1000;overflow:hidden;background:url("/images/box_bg1.jpg") repeat left top;}
+#body .MainBlock .left .TabBlock .menu {background-color:#FFFFFF; height:35px; border-right:1px solid #FFFFFF;overflow:hidden;z-index:1000;overflow:hidden;background:url("/templets/default/images/box_bg1.jpg") repeat left top;}
 #body .MainBlock .left .TabBlock .menu ul {margin:0px; padding:0px; list-style:none; position:relative;}
 #body .MainBlock .left .TabBlock .menu li {display:inline; height:35px;float:left;width:120px;cursor:pointer;}
-#body .MainBlock .left .TabBlock .menu li a {color:#666; text-decoration:none; line-height:35px;text-align:center;font-size:12px;font-weight:normal;display:block;height:35px;	background:url("/images/box_bg1.jpg") repeat left top;}
+#body .MainBlock .left .TabBlock .menu li a {color:#666; text-decoration:none; line-height:35px;text-align:center;font-size:12px;font-weight:normal;display:block;height:35px;	background:url("/templets/default/images/box_bg1.jpg") repeat left top;}
 #body .MainBlock .left .TabBlock .menu li a.tabactive { border-right:1px solid #DFDFDF; color:#007cbe;  font-weight:bold; border-top:3px solid #007cbe;height:35px;line-height:33px;}
 #body .MainBlock .left .TabBlock #tabcontent1,#body .MainBlock .left .TabBlock #tabcontent2 ,#body .MainBlock .left .TabBlock #tabcontent3{padding:10px 10px;
 	 border-top:1px solid #e5e5e5;
