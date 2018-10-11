@@ -613,7 +613,7 @@ input,textarea{
 	z-index: 9;
 }
 #popupTitleBar {
-	background:url("../images/box_bg1.jpg") repeat-x left top;
+	background:url("/templets/default/images/box_bg1.jpg") repeat-x left top;
 	color: #007cbe;
 	font-weight: bold;
 	height: 1.3em;

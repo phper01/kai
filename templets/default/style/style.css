@@ -38,7 +38,7 @@
 
 #body .topic{
 	height:35px;
-	background:url("../images/box_bg1.jpg") repeat-x left top;
+	background:url("/templets/default/images/box_bg1.jpg") repeat-x left top;
 	}
 #body   .topic .TopicTitle{
 	background:url("../images/box_bg2.gif") no-repeat -10px -3px;
