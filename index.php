@@ -13,8 +13,6 @@
 </head>
 
 <body>
-﻿
-
 <!--top start -->
 <div class="top">
     <div class="TopInfo"><span class="link">选择语言：<a href="/">简体中文</a>
