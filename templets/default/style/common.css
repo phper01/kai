@@ -116,7 +116,7 @@ body,td,th {
 	font-size: 14px;
 }
 
-img, div { behavior: url(/images/iepng/iepngfix.htc); }
+
 
 body, div, p,img,dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, blockquote {
 	padding:0px;
@@ -343,7 +343,6 @@ input,textarea{
 	bottom:0px;
 	left:0;
 	color:#007cbe;
-	font-weight:; 
 	text-align:center;
 	cursor:pointer;
 	margin:auto;
@@ -545,7 +544,7 @@ input,textarea{
 	padding-top: 20px;
 	padding-bottom: 20px;
 	overflow: hidden;
-	color#FFF;
+	color:#FFF;
 }
 #light_footer_wrapper {
 	font-size:12px;
@@ -557,7 +556,8 @@ input,textarea{
 	display: inline;
 }
 #dark_footer li a{
-	color:#FFF;}
+	color:#FFF;
+}
 
 
 /*backtotop*/
@@ -566,7 +566,6 @@ input,textarea{
  width: 50px;
  height:50px;
  line-height: 1.2;
- background:url("../images/back_top.png") left top;;
  color: #fff;
  font-size: 12px;
  text-align: center;
@@ -574,7 +573,6 @@ input,textarea{
  _position: absolute;
  right: 10px;
  bottom: 100px;
- _bottom: "auto";
  cursor: pointer;
  opacity: .6;
  filter: Alpha(opacity=60);
@@ -637,7 +635,6 @@ input,textarea{
 	height: 15px;
 	width: 15px;
 	text-indent: -9000px;
-	background: url('../images/close.gif') no-repeat;
 }
 
 
@@ -666,7 +663,7 @@ input,textarea{
 
 
 
-#cshareF, #csPanel { line-height:14px; font-family:"宋体","SimSun",1em/normal Helvetica,Calibri,Tahoma,Arial,,sans-serif; }
+#cshareF, #csPanel { line-height:14px; font-family:"宋体","SimSun"; }
 .cs-xb1 { margin-left:5px; background:#0f0; }
 .cs-xb2 { margin-left:3px; border-width:0 2px; }
 .cs-xb3 { margin-left:2px; }
