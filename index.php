@@ -112,22 +112,7 @@
             <div id="Focus">
 
                 <div class="flashnews">
-                    <!-- size: 980px * 300px -->
-                    <div class="js-silder">
-                        <div class="silder-scroll">
-                            <div class="silder-main">
-                                <div class="silder-main-img">
-                                    <img src="/uploads/180724/1-1PH41014152P.jpg" alt="">
-                                </div>
-                                <div class="silder-main-img">
-                                    <img src="/uploads/180518/1-1P51Q5511K18.jpg" alt="">
-                                </div>
-                                <div class="silder-main-img">
-                                    <img src="/uploads/180518/1-1P51Q55009322.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <img src="/uploads/180724/1-1PH41014152P.jpg" alt="">
 
                 </div>
 
@@ -358,13 +343,7 @@
         <script type="text/javascript" src="/templets/default/js/h.js"></script>
         <!--ProductShow end-->
         <div class="HeightTab clearfix"></div>
-        <!--links start-->
-        <div id="Links">
-            <span> </span>
-            <li><a>友情链接：</a></li>
-
-        </div>
-        <!--links end-->
+     
 
     </div>
     <!--body end-->
@@ -375,7 +354,7 @@
     <div id="footer">
         <div class="inner">
             <div class="BottomNav">
-                <a href="/index.htm/cn/">网站首页</a> |
+                <a href="/">网站首页</a> |
 
                 <a href="/cn/about/">关于我们</a> |
 
@@ -402,12 +381,6 @@
 
 
 </div>
-<script type="text/javascript" src="/templets/default/js/TabShow.js"></script>
-<script type="text/javascript">
-    window.onerror = function () {
-        return true;
-    }
-</script>
 <script src="/templets/default/js/wySilder.min.js" type="text/javascript"></script>
 <script>
     $(function (){
@@ -422,6 +395,9 @@
         });
     });
 </script>
+<script type="text/javascript" src="/templets/default/js/TabShow.js"></script>
+
+
 
 </body>
 </html>
