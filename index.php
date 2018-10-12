@@ -396,7 +396,11 @@
     });
 </script>
 <script type="text/javascript" src="/templets/default/js/TabShow.js"></script>
-
+<script type="text/javascript">
+    window.onerror = function () {
+        return true;
+    }
+</script>
 
 
 </body>
