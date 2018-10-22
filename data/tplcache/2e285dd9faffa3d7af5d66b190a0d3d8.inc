@@ -1,0 +1,1 @@
+<tr><td class="fw_t" width="75%">·<a href="[field:arcurl/]" target="_blank">[field:title/]</a></td><td class="fw_s" width="25%">[[field:pubdate function="GetDateTimeMK(@me)" /]]</td></tr>
