@@ -354,7 +354,7 @@
     <div id="footer">
         <div class="inner">
             <div class="BottomNav">
-                <a href="/">网站首页</a> |
+                <a href="/">首页</a> |
 
                 <a href="/cn/about/">关于我们</a> |
 
